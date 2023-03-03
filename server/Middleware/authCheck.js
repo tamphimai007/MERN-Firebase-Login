@@ -4,6 +4,7 @@ const admin = require('../config/firebase')
 exports.authCheck = async (req, res, next) => {
     //console.log('hello Middleware', req.headers)
     try {
+        //res.header('Access-Control-Allow-Origin', '*')
         // code
         const firebaseUser = await admin
             .auth()
